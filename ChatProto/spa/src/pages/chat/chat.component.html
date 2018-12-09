@@ -1,0 +1,16 @@
+Welcome to room: {{ roomName }}
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let m of messages">
+        <h5>{{ m.fullName }}</h5>
+        <p>{{ m.message }}</p>
+    </li>
+    <div class="row">
+        <div class="col">
+            <textarea [(ngModel)]="currentMessage" class="form form-control"></textarea>
+        </div>
+        <div class="col">
+            <div class="btn btn-primary" (click)="sendMessage()">Send</div>
+        </div>
+    </div>
+</ul>

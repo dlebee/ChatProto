@@ -1,0 +1,9 @@
+
+
+<label>Full Name</label>
+<input type="text" [(ngModel)]="fullName" class="form form-control">
+
+<label>Channel</label>
+<input type="text" [(ngModel)]="channelName" class="form form-control">
+<br/>
+<button class="btn btn-primary" (click)="join()">Join {{channelName}} channel</button>
